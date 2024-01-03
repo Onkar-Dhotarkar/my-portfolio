@@ -1,28 +1,84 @@
-// Navbar.js
-
-import React from 'react';
+import React, { useState } from 'react';
+import { FaBars, FaTimes } from 'react-icons/fa';
+import '../index.css'; // Import your custom CSS file for Navbar styling
 
 const Navbar = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [transitionDuration, setTransitionDuration] = useState('700ms'); // Initial transition duration
+
+  const toggleNavbar = () => {
+    setIsOpen(!isOpen);
+    // Change the transition duration when toggling
+    setTransitionDuration(isOpen ? '700ms' : '300ms'); // Example: 700ms when closing, 300ms when opening
+  };
+
   return (
-    <nav className="bg-gray-800 p-4">
-      <div className="container mx-auto flex justify-between items-center">
-        <div className="flex items-center">
-          <span className="text-white text-2xl font-bold px-4">Onkar</span>
+    <nav className="p-8 md:p-12  top-0 w-full z-50 ">
+      <div className="container mx-auto flex justify-between items-center flex-col md:flex-row">
+        {/* Hamburger menu for small screens */}
+        <div className="flex items-center justify-between w-full md:w-auto">
+          <div className="flex items-center">
+            <span className="text-gray-500 hover:scale-105  duration-300  md:text-4xl font-bold px-4 font-serif">Onkar Dhotarkar.</span>
+          </div>
+          <div className="md:hidden">
+            {isOpen ? (
+              <FaTimes
+                className="text-gray-500 text-2xl cursor-pointer"
+                onClick={toggleNavbar}
+              />
+            ) : (
+              <FaBars
+                className="text-gray-500 text-2xl cursor-pointer"
+                onClick={toggleNavbar}
+              />
+            )}
+          </div>
         </div>
-        <div className="hidden md:flex space-x-8">
-          <a href="/" className=" hover:scale-105 duration-200 font-medium text-gray-500">Home</a>
-          <a href="/about" className=" hover:scale-105 duration-200 font-medium text-gray-500">About</a>
-          <a href="/projects" className=" hover:scale-105 duration-200 font-medium text-gray-500">Projects</a>
-          <a href="/skills" className=" hover:scale-105 duration-200 font-medium text-gray-500">Skills</a>
-          <a href="/contact" className="pr-4 hover:scale-105 duration-200 font-medium text-gray-500">Contact</a>
-        </div>
-        {/* Hamburger menu for mobile */}
-        <div className="flex md:hidden">
-          {/* You can add an icon here for mobile menu */}
-          {/* For simplicity, using text */}
-          <button className="text-white">
-            Menu
-          </button>
+        {/* Navbar links */}
+        <div
+          className={`md:flex md:items-center md:space-x-8 w-full md:w-auto transition-all ${isOpen ? 'duration-700' : 'duration-300'} ${isOpen ? 'block mt-4 md:mt-0' : 'hidden'}`}
+          style={{ transitionDuration }}
+        >
+          <a
+            href="/"
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium md:text-lg text-gray-500 ${
+              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
+            }`}
+          >
+            Home
+          </a>
+          <a
+            href="/about"
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-lg ${
+              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
+            }`}
+          >
+            About
+          </a>
+          <a
+            href="/projects"
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-lg ${
+              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
+            }`}
+          >
+            Projects
+          </a>
+          <a
+            href="/skills"
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-lg ${
+              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
+            }`}
+          >
+            Skills
+          </a>
+          <a
+            href="/contact"
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 pr-4 md:text-lg md:pr-20 ${
+              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0 ' : ''
+            }`}
+          >
+            Contact
+          </a>
         </div>
       </div>
     </nav>
