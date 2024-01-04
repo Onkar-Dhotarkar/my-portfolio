@@ -6,7 +6,7 @@ function Footer() {
     <>
       <div className='main md:hidden flex flex-col items-center justify-center space-y-5 mb-6'>
         <Link to="about" smooth={true} duration={500}>About</Link>
-        <Link to="experience" smooth={true} duration={500}>Experience</Link>
+        <Link to="experiecne" smooth={true} duration={500}>Experience</Link>
         <Link to="projects" smooth={true} duration={500}>Projects</Link>
         <Link to="contact" smooth={true} duration={500}>Contact</Link>
       </div>
