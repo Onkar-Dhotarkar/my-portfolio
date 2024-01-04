@@ -39,17 +39,10 @@ const Navbar = () => {
           className={`md:flex md:items-center md:space-x-8 w-full md:w-auto transition-all ${isOpen ? 'duration-700' : 'duration-300'} ${isOpen ? 'block mt-4 md:mt-0' : 'hidden'}`}
           style={{ transitionDuration }}
         >
-          <a
-            href="/"
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium md:text-lg text-gray-500 ${
-              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
-            }`}
-          >
-            Home
-          </a>
+          
           <a
             href="/about"
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-lg ${
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${
               isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
             }`}
           >
@@ -57,23 +50,23 @@ const Navbar = () => {
           </a>
           <a
             href="/projects"
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-lg ${
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${
+              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
+            }`}
+          >
+            Experience
+          </a>
+          <a
+            href="/skills"
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${
               isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
             }`}
           >
             Projects
           </a>
           <a
-            href="/skills"
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-lg ${
-              isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''
-            }`}
-          >
-            Skills
-          </a>
-          <a
             href="/contact"
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 pr-4 md:text-lg md:pr-20 ${
+            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 pr-4 md:text-2xl md:pr-20 ${
               isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0 ' : ''
             }`}
           >

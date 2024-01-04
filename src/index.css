@@ -10,4 +10,17 @@
   font-family: 'Poppins', sans-serif;
   padding: 0;
   margin: 0;
+  /* background-color: goldenrod; */
 }
+/* .transform-gpu {
+  --tw-translate-y: 0;
+  transform: translateY(var(--tw-translate-y));
+} */
+
+/* .transform-gpu:hover {
+  --tw-translate-y: 1rem; 
+} */
+
+/* .nav-link{
+  @apply relative font-semibold text-white cursor-pointer text-[17px] w-fit md:block after:block  after:absolute after:h-[3px] after:bg-yellow-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after: origin-center
+  } */
