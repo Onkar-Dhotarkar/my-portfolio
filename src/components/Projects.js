@@ -111,7 +111,7 @@ function Projects() {
             <div className="hidden md:flex md:justify-end md:items-center  md:right-4 md:top-4 md:mx-20 md:mb-4">
             <Link to="contact" smooth={true} duration={500}>
 
-                <RiArrowDownDoubleLine className="text-5xl" /></Link>
+                <RiArrowDownDoubleLine className="text-5xl cursor-pointer" /></Link>
             </div>
 
 
