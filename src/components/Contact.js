@@ -1,12 +1,14 @@
 import React from 'react'
 import { MdEmail } from "react-icons/md";
 import { FaLinkedin } from "react-icons/fa";
+// import { Link } from 'react-router-dom'
+
 
 
 function Contact() {
     return (
         <>
-            <div className="main flex justify-center items-center flex-col">
+            <div id='contact' className="main flex justify-center items-center flex-col">
                 <div className='title mt-28 md:mt-36 flex justify-center flex-col items-center mb-11'>
                     <p className='text-gray-400  md:text-lg text-sm'>Get in Touch</p>
                     <h1 className='text-4xl font-bold md:text-5xl '>Contact Me</h1>
@@ -16,15 +18,20 @@ function Contact() {
 
                     <div className="email flex flex-row space-x-3 items-center justify-center ">
                         <MdEmail className='text-2xl md:text-3xl' />
-                        <p className='relative font-semibold  cursor-pointer text-[17px] w-fit md:block after:block  after:absolute after:h-[2px] after:bg-gray-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center text-xs md:text-xl md:text-gray-500 text-gray-900  '>onkardhotarkar@gmail.con</p>
+                       
+                        <a href={`mailto:onkardhotarkar@gmail.com`} className='relative font-semibold  cursor-pointer text-[17px] w-fit md:block after:block  after:absolute after:h-[2px] after:bg-gray-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center text-xs md:text-xl md:text-gray-500 text-gray-900 ' >onkardhotarkar@gmail.con</a>
 
                     </div>
 
 
 
+
                     <div className=" email flex flex-row space-x-3 items-center justify-center md:-mt-1">
                         <FaLinkedin className='text-2xl md:text-2xl' />
-                        <p className='relative font-semibold  cursor-pointer text-[17px] w-fit md:block after:block  after:absolute after:h-[2px] after:bg-gray-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center text-xs md:text-xl md:text-gray-500 text-gray-900'>LinkedIn</p>
+
+                        
+
+                        <a href='https://www.linkedin.com/in/onkar-dhotarkar/' target='_blank' className='relative font-semibold  cursor-pointer text-[17px] w-fit md:block after:block  after:absolute after:h-[2px] after:bg-gray-400 after:w-full after:scale-x-0 after:hover:scale-x-100 after:transition after:duration-300 after:origin-center text-xs md:text-xl md:text-gray-500 text-gray-900'>LinkedIn</a>
 
                     </div>
 

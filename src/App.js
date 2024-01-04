@@ -1,22 +1,24 @@
-import About from "./components/About";
-import Contact from "./components/Contact";
-import Experiecne from "./components/Experiecne";
-import Footer from "./components/Footer";
-import Home from "./components/Home";
-import Navbar from "./components/Navbar";
-import Projects from "./components/Projects";
+import React from 'react';
+// import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Contact from './components/Contact';
+
+import Footer from './components/Footer';
+import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Projects from './components/Projects';
+import About from './components/About';
+import Experience from './components/Experiecne';
 
 function App() {
   return (
     <>
-    <Navbar/>
-    <Home/>
-    <About/>
-    <Experiecne/>
-    <Projects/>
-    <Contact/>
-    <Footer/>
-    
+      <Navbar />
+      <Home />
+      <About />
+      <Experience />
+      <Projects />
+      <Contact />
+      <Footer />
     </>
   );
 }

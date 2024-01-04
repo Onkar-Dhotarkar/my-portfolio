@@ -3,11 +3,18 @@ import om from "./assets/om.png";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { Typewriter } from 'react-simple-typewriter'
+import { Link } from 'react-scroll';
+import resumeFile from './assets/Resume.pdf'
+
+// import { Link } from 'react-router-dom'
+// import 
+
+
 
 function Home() {
     
     return (
-        <div className="main  mt-5 flex flex-col justify-center items-center md:flex-row   md:space-x-28">
+        <div className="main  mt-5 flex flex-col justify-center items-center md:flex-row   md:space-x-28 ">
 
             <div className="photo relative">
                 <div className="circle h-[29vh] w-[29vh] rounded-full bg-gray-200 shadow-xl flex items-center justify-center md:h-[65vh] md:w-[65vh]">
@@ -33,13 +40,19 @@ function Home() {
 
 
                 <div className="btn mt-2">
-                    <button className='text-xs border-2  p-3 m-2 rounded-2xl shadow-md hover:bg-gray-200 duration-500 hover:scale-105 md:text-sm'>Download CV</button>
-                    <button className=' text-xs border p-3 m-2 rounded-2xl shadow-md text-white bg-gray-900  hover:bg-gray-600 duration-500 hover:scale-105 md:text-sm'>Contact Info</button>
+                
+                <a href={resumeFile} download={"resume.pdf"} target='_blank' rel='noreferrer' >
+
+                    <button className='text-xs border-2 border-gray-400  p-3 m-2 rounded-2xl shadow-md hover:bg-gray-200 duration-500 hover:scale-105 md:text-sm' >Download CV</button>
+                    </a>
+                    <Link to="contact" smooth={true} duration={500} className=' text-xs  border border-gray-400 p-3 m-2 rounded-2xl shadow-md text-gray-300 bg-gray-900  hover:bg-gray-600 duration-500 hover:scale-105 md:text-sm'>Contact Info</Link>
                 </div>
 
                 <div className="icon mt-2  flex justify-center space-x-3 ">
-                    <FaGithubSquare className='text-3xl cursor-pointer hover:text-gray-500 duration-300 md:text-4xl' />
-                    <FaLinkedin className='text-3xl cursor-pointer hover:text-gray-500 duration-300 md:text-4xl' />
+                    <a href='https://github.com/Onkar-Dhotarkar' target='_blank'>
+                    <FaGithubSquare className='text-3xl cursor-pointer hover:text-gray-500 duration-300 md:text-4xl' /></a>
+                    <a href='https://www.linkedin.com/in/onkar-dhotarkar/' target='_blank'>
+                    <FaLinkedin className='text-3xl cursor-pointer hover:text-gray-500 duration-300 md:text-4xl' /></a> 
                 </div>
 
             </div>

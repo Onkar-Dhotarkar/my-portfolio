@@ -4,6 +4,10 @@ import news from '../components/assets/news.png';
 import text from '../components/assets/textcraft.png';
 import { IoIosArrowRoundForward } from "react-icons/io";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
+import { Link } from 'react-scroll';
+
+// import { Link } from 'react-router-dom'
+
 
 
 
@@ -12,12 +16,12 @@ function Projects() {
     return (
         <>
 
-            <div className='title mt-28 md:mt-24 flex justify-center flex-col items-center mb-11'>
+            <div id='projects' className='title mt-28 md:mt-28 flex justify-center flex-col items-center mb-11'>
                 <p className='text-gray-400  md:text-lg text-sm'>Browse My Recet</p>
                 <h1 className='text-4xl font-bold md:text-5xl '>Projects</h1>
             </div>
 
-            <div className="allprj flex flex-col md:flex-row md:space-x-7 justify-center items-center md:mb-0">
+            <div className="allprj flex flex-col md:flex-row md:space-x-7 justify-center items-center md:mb-16">
 
                 <div className="project-1 flex  flex-col space-y-5 justify-center items-center h-[65vh] w-[44vh] border-2 rounded-3xl shadow-lg mb-9 md:mb-4  md:shadow-none md:w-[49vh] md:h-[60vh]">
 
@@ -34,7 +38,8 @@ function Projects() {
                     </div>
 
                     <div class="btn">
-                        <button class='flex items-center justify-self-center border p-3 m-2 rounded-xl shadow-md text-black duration-500 transform-gpu hover:translate-y-1 transition-transform text-sm md:text-lg'>View <IoIosArrowRoundForward class='text-lg ' /></button>
+                        
+                        <a href='https://github.com/Onkar-Dhotarkar/OnCode-Frontend'  target='_blank' class='flex items-center justify-self-center border p-3 m-2 rounded-xl shadow-md text-black duration-500 transform-gpu hover:translate-y-1 transition-transform text-sm md:text-lg'>View </a>
                     </div>
 
 
@@ -55,7 +60,9 @@ function Projects() {
                     </div>
 
                     <div class="btn">
-                        <button class='flex items-center justify-self-center border p-3 m-2 rounded-xl shadow-md text-black duration-500 transform-gpu hover:translate-y-1 transition-transform text-sm md:text-lg'>View <IoIosArrowRoundForward class='text-lg ' /></button>
+
+                        
+                        <a href='https://github.com/Onkar-Dhotarkar/NewsPluse_Component_Based-React-App' target='_blank' class='flex items-center justify-self-center border p-3 m-2 rounded-xl shadow-md text-black duration-500 transform-gpu hover:translate-y-1 transition-transform text-sm md:text-lg'>View </a>
                     </div>
 
 
@@ -76,7 +83,8 @@ function Projects() {
                     </div>
 
                     <div class="btn">
-                        <button class='flex items-center justify-self-center border p-3 m-2 rounded-xl shadow-md text-black duration-500 transform-gpu hover:translate-y-1 transition-transform text-sm md:text-lg'>View <IoIosArrowRoundForward class='text-lg ' /></button>
+                        
+                        <a href='https://github.com/Onkar-Dhotarkar/TextCarft-React_Frontend_Project' target='_blank' class='flex items-center justify-self-center border p-3 m-2 rounded-xl shadow-md text-black duration-500 transform-gpu hover:translate-y-1 transition-transform text-sm md:text-lg'>View </a>
                     </div>
 
 
@@ -100,8 +108,10 @@ function Projects() {
                 
             </div>
 
-            <div className="hidden md:flex md:justify-end md:items-center  md:right-4 md:top-4 md:mx-20">
-                <RiArrowDownDoubleLine className="text-5xl" />
+            <div className="hidden md:flex md:justify-end md:items-center  md:right-4 md:top-4 md:mx-20 md:mb-4">
+            <Link to="contact" smooth={true} duration={500}>
+
+                <RiArrowDownDoubleLine className="text-5xl" /></Link>
             </div>
 
 
