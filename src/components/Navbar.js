@@ -23,7 +23,7 @@ const Navbar = () => {
       <div className="container mx-auto flex justify-between items-center flex-col md:flex-row">
         <div className="flex items-center justify-between w-full md:w-auto">
           <div className="flex items-center">
-            <h1 className="text-gray-500 hover:scale-105 duration-300 md:text-4xl font-bold px-4 font-serif">
+            <h1 className="text-gray-500 hover:scale-105 duration-300 md:text-4xl font-bold px-4 font-serif cursor-pointer">
               Onkar Dhotarkar.
             </h1>
           </div>
@@ -50,7 +50,7 @@ const Navbar = () => {
             smooth={true}
             duration={700}
             onClick={handleNavLinkClick}
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
+            className={`cursor-pointer block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
           >
             About
           </Link>
@@ -59,7 +59,7 @@ const Navbar = () => {
             smooth={true}
             duration={700}
             onClick={handleNavLinkClick}
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
+            className={` cursor-pointer block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
           >
             Experience
           </Link>
@@ -68,7 +68,7 @@ const Navbar = () => {
             smooth={true}
             duration={700}
             onClick={handleNavLinkClick}
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
+            className={`cursor-pointer block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
           >
             Projects
           </Link>
@@ -77,7 +77,7 @@ const Navbar = () => {
             smooth={true}
             duration={700}
             onClick={handleNavLinkClick}
-            className={`block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
+            className={`cursor-pointer block md:inline-block hover:scale-105 duration-200 font-medium text-gray-500 md:text-2xl ${isOpen ? 'mb-3 md:mb-0 ml-4 md:ml-0' : ''}`}
           >
             Contact
           </Link>
