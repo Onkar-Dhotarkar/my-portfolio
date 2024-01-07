@@ -15,15 +15,15 @@ This portfolio showcases my skills, projects, work experience, and contact infor
 
 ## Key Features:
 - Home: A brief introduction and welcome section.<br>
-About: Details about my background, skills, and interests.<br>
-Experience: Highlights of my professional experience.<br>
-Projects: Showcasing various projects I've worked on.<br>
-Contact: Ways to get in touch with me.<br>
-Footer: Social media links and additional information.<br>
+- About: Details about my background, skills, and interests.<br>
+- Experience: Highlights of my professional experience.<br>
+- Projects: Showcasing various projects I've worked on.<br>
+- Contact: Ways to get in touch with me.<br>
+- Footer: Social media links and additional information.<br>
 
 ## Technologies Used:
-ReactJS: Front-end library for building interactive user interfaces.<br>
-Tailwind CSS: Utility-first CSS framework for styling.<br>
-React Router: For navigation within the single-page application.<br>
-Git: Version control system used for this project.<br>
-GitHub Pages: Hosting platform for deployment.<br>
+- ReactJS: Front-end library for building interactive user interfaces.<br>
+- Tailwind CSS: Utility-first CSS framework for styling.<br>
+- React Router: For navigation within the single-page application.<br>
+- Git: Version control system used for this project.<br>
+- GitHub Pages: Hosting platform for deployment.<br>
