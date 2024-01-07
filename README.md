@@ -14,7 +14,7 @@ Welcome to my portfolio! This repository contains the code for my personal portf
 This portfolio showcases my skills, projects, work experience, and contact information. It's built using modern web technologies to provide an interactive and visually appealing user experience.
 
 ## Key Features:
-Home: A brief introduction and welcome section.<br>
+-- Home: A brief introduction and welcome section.<br>
 About: Details about my background, skills, and interests.<br>
 Experience: Highlights of my professional experience.<br>
 Projects: Showcasing various projects I've worked on.<br>
