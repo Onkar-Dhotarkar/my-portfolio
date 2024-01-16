@@ -6,7 +6,6 @@ import { IoIosArrowRoundForward } from "react-icons/io";
 import { RiArrowDownDoubleLine } from "react-icons/ri";
 import { Link } from 'react-scroll';
 
-// import { Link } from 'react-router-dom'
 
 
 

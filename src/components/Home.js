@@ -45,7 +45,7 @@ function Home() {
 
                     <button className='text-xs border-2 border-gray-400  p-3 m-2 rounded-2xl shadow-md hover:bg-gray-200 duration-500 hover:scale-105 md:text-sm' >Download CV</button>
                     </a>
-                    <Link to="contact" smooth={true} duration={500} className=' text-xs  border border-gray-400 p-3 m-2 rounded-2xl shadow-md text-gray-300 bg-gray-900  hover:bg-gray-600 duration-500 hover:scale-105 md:text-sm cursor-pointer'>Contact Info</Link>
+                    <Link to="contact" smooth={true} duration={500} className=' text-xs  border-2 border-gray-400 p-3 m-2 rounded-2xl shadow-md text-gray-300 bg-gray-900  hover:bg-gray-600 duration-500 hover:scale-105 md:text-sm cursor-pointer'>Contact Info</Link>
                 </div>
 
                 <div className="icon mt-2  flex justify-center space-x-3 ">
