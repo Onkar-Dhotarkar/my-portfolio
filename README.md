@@ -27,3 +27,6 @@ This portfolio showcases my skills, projects, work experience, and contact infor
 - React Router: For navigation within the single-page application.<br>
 - Git: Version control system used for this project.<br>
 - GitHub Pages: Hosting platform for deployment.<br>
+
+## Support and Love
+`For support, give a ⭐️.`
