@@ -36,7 +36,7 @@ function About() {
                             <div className="school flex flex-col items-center justify-center ">
                                 <FaSchoolCircleCheck className='text-2xl md:text-3xl text-center mb-2' />
                                 <h1 className=' text-xl md:text-2xl font-bold mb-1 text-gray-800'>School</h1>
-                                <p className=' text-xs md:text-sm font-semibold text-gray-500'>Maharashtra Vidyalaya, Barshi</p>
+                                <p className=' text-xs md:text-sm font-semibold text-gray-500'>Government Polytechnic, Mumbai</p>
                             </div>
                         </div> 
 
@@ -45,7 +45,7 @@ function About() {
                             <div className="college flex flex-col items-center justify-center">
                                 <IoSchoolSharp className='text-2xl md:text-3xl text-center mb-2' />
                                 <h1 className=' text-xl md:text-2xl font-bold mb-1 text-gray-800'>College</h1>
-                                <p className=' text-xs md:text-sm font-semibold text-gray-500'>Government Polytechnic, Mumbai</p>
+                                <p className=' text-xs md:text-sm font-semibold text-gray-500'>PES Modern College of Engineering, Pune</p>
                             </div>
                         </div>
                     </div>
