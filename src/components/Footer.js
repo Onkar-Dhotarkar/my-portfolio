@@ -20,9 +20,9 @@ function Footer() {
       <div className="copy md:mt-10 md:mb-10">
         <footer className="p-4 text-center relative">
           <p className="text-gray-500 ">
-            Copyright &copy; {new Date().getFullYear()} Onkar Dhotarkar.
+            Copyright &copy; 2023 Onkar Dhotarkar.
             <span className='inline-block cursor-pointer group relative '>
-              All Rights Reserved.
+              Portfolio@2.0
               <span className="absolute left-1/2 transform -translate-x-1/2 -bottom-8 bg-gray-100 text-black text-sm rounded py-1 px-2 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-300 ease-in-out whitespace-nowrap border border-black">
               Original inspiration, but coded with my twist in React + Tailwind. Same look, different tech, all mine!
               </span>
